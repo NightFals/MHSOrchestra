@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+.sky {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(white, #00f0ff);
+  box-shadow: 0 0 8px #00f0ff;
+  z-index: 2;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.star:hover {
+  transform: scale(1.4);
+  box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff;
+  cursor: pointer;
+}
